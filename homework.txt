@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+
+// first of all we have created a array of "laptopprise" variable which consist 5 variables as laptopprise[0]-laptopprise[4] and give the values in globle declaration.
+
+	float laptopprice[5]={ 36450.22,25830.44,28670.90,48500.230,56800.591};
+                           //  0       1         2        3        4 
+    int main()
+	{
+// we have created int variable as laptop id  which stores 0-5 value in it and used for  .
+
+	int laptopid =0;
+
+	for(laptopid = 0 ; laptopid<5;laptopid++)
+	{
+	printf("  laptop id  %d\t laptop price =%.2f\n",laptopid,laptopprice[laptopid]);
+	}
+	
+// After that by using scanf function taking two inputs as laptopprice and store it  into the  array position 0 and 1. 
+
+    scanf(" %f  %f ", &laptopprice[0],&laptopprice[1]);
+
+                                // after taking input from user it will be printed .
+    printf("\n The new price of laptop id : %.2f \t  %.2f\n\n",laptopprice[0],laptopprice[1]);
+
+    return 0;
+    }
+
+// from that module we have studied 1. initialization of array  2.display prise of each laptop using for loop within few  lines of program. 3. storing the values taken by the user in array 
